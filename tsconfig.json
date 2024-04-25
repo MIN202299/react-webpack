@@ -5,24 +5,24 @@
       "~/*": ["src/*"]
     },
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "target": "ES2020",                                 
-    "module": "ES2020",                                  /* 指定编译输出的文件模块规范 */
-    "useDefineForClassFields": true,                     /* This flag switches to the upcoming ECMA runtime behavior. */
-    "forceConsistentCasingInFileNames": true,            /* 严格区分大小写 */
-    "skipLibCheck": true,                                /* 不检查所有的 .d.ts files. */
+    "target": "ES2020",
+    "module": "ES2020", /* 指定编译输出的文件模块规范 */
+    "useDefineForClassFields": true, /* This flag switches to the upcoming ECMA runtime behavior. */
+    "forceConsistentCasingInFileNames": true, /* 严格区分大小写 */
+    "skipLibCheck": true, /* 不检查所有的 .d.ts files. */
     "sourceMap": true,
-    
+
     /* Bundler mode */
-    "moduleResolution": "Node",                          /* 指定模块解析器 */
+    "moduleResolution": "Node", /* 指定模块解析器 */
     "jsx": "react-jsx",
-    "noEmit": false,                                      /* 指定仅进行语法检查和类型检查不输出js */
-    "isolatedModules": true,                             /* 每个ts文件视为一个模块，不会检查模块间的类型依赖，从而提高类型检查速度 */
-    "esModuleInterop": true,                             /* 使用简洁的es模块导入 不必像这样 import * as xx from 'xx' */
-    "resolveJsonModule": true,                           /* 允许导入json模块 */
-    
+    "noEmit": false, /* 指定仅进行语法检查和类型检查不输出js */
+    "isolatedModules": true, /* 每个ts文件视为一个模块，不会检查模块间的类型依赖，从而提高类型检查速度 */
+    "esModuleInterop": true, /* 使用简洁的es模块导入 不必像这样 import * as xx from 'xx' */
+    "resolveJsonModule": true, /* 允许导入json模块 */
+
     /* Linting */
-    "strict": true,                                      /* 开启严格模式 */
-    "noFallthroughCasesInSwitch": true,                  /* switch 中每个一个必须包含 break / return throw */
-  
+    "strict": true, /* 开启严格模式 */
+    "noFallthroughCasesInSwitch": true /* switch 中每个一个必须包含 break / return throw */
+
   }
 }
