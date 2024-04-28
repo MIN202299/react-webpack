@@ -28,17 +28,28 @@ const webpackBaseConfig = {
   ],
   module: {
     rules: [
-      // 处理tsx
       {
         test: /\.ts(x?)$/,
         exclude: /node_modules/,
         use: ['babel-loader', 'ts-loader'],
       },
-      // 处理jsx
       {
         test: /\.(js|mjs|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
+      },
+      {
+        test: /\.(sc|sa|c)ss$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              esModule: false,
+            },
+          },
+          'sass-loader',
+        ],
       },
     ],
 
